@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sentiment Tool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>sentimentLogo.jpg</normaloff>sentimentLogo.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QPushButton" name="importMindmap">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>330</y>
+     <width>120</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Import</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lang_lbl">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>153</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Language</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="langList">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>180</y>
+     <width>336</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>English</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="file_lbl">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>228</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Input FIle</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="inputFile">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>255</y>
+     <width>336</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="plainText">
+    <string>File Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>331</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>vsse.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="inputMindmap">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>330</y>
+     <width>336</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="plainText">
+    <string>File Name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="importFile">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>255</y>
+     <width>120</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Import</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mindmap_lbl">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>303</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Mind Map</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>336</width>
+     <height>15</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);
+
+</string>
+   </property>
+   <property name="maximum">
+    <number>100</number>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+   <property name="textVisible">
+    <bool>true</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="invertedAppearance">
+    <bool>false</bool>
+   </property>
+   <property name="textDirection">
+    <enum>QProgressBar::TopToBottom</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>418</y>
+     <width>518</width>
+     <height>5</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="extractOutput">
+   <property name="geometry">
+    <rect>
+     <x>740</x>
+     <y>500</y>
+     <width>120</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Extract</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="output_lbl">
+   <property name="geometry">
+    <rect>
+     <x>379</x>
+     <y>475</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Output FIle</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="outputFile">
+   <property name="geometry">
+    <rect>
+     <x>379</x>
+     <y>500</y>
+     <width>336</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+   <property name="plainText">
+    <string>File Name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="run">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>590</y>
+     <width>100</width>
+     <height>103</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(230, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
